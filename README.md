@@ -1,4 +1,16 @@
-# idrr-workshop-ex01b-binder
-SORTEE 2026 Workshop 3, An introduction to using Docker with R for reproducible research: Example 1, for running on mybinder.org
+### SORTEE 2026 Workshop 3
+### An introduction to using Docker with R for reproducible research
+# Example: Summarising the penguins data set (R 4.0.0)
+
+_This repository is set up to be launched as a container on mybinder.org, rather than to be used to build an image with Docker Desktop. For the version of this example that can be used to build an image locally, go to <https://github.com/stevekambouris/idrr-workshop-ex01b>._
+
+Click the button below to start an instance of the container defined by this repository on mybinder.org.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/stevekambouris/idrr-workshop-ex01b-binder/main?urlpath=rstudio)
+
+This Docker image is based on [rocker/binder:4.0.0](https://hub.docker.com/layers/rocker/binder/4.0.0/), which has R version `4.0.0` installed, along with `tidyverse` packages (and in particular, `dplyr` version `1.0.0`).
+
+**Instructions**
+1. Once the container has launched as a result of clicking the above button, you should see an instance of RStudio in your web browser window.
+2. There will be two files available, `data_penguins.csv` and `summarise_penguins.R`.
+3. Open `summarise_penguins.R` in RStudio and run the code from the top, observing the output to the console as you progress.
